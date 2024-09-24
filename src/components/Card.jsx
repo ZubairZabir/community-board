@@ -9,7 +9,12 @@ const Card = ({ title, description, link, image }) => {
         <h3 className="card-title">{title}</h3>
         <p className="card-description">{description}</p>
         {link && (
-          <a href={link} className="card-link">
+          <a
+            href={link}
+            className="card-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Learn More
           </a>
         )}
